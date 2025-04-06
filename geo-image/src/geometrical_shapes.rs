@@ -15,12 +15,12 @@ pub trait Displayable {
 }
 
 // // Step 2: Implementing the Point Structure
-// #[derive(Clone)] // Deriving Clone for Point
-// pub struct Point {
-//     pub x: i32,
-//     pub y: i32,
-//     color: Color,
-// }
+#[derive(Clone)] // Deriving Clone for Point
+pub struct Point {
+    pub x: i32,
+    pub y: i32,
+    color: Color,
+}
 
 // impl Point {
 //     pub fn new(x: i32, y: i32) -> Self {
