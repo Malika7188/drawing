@@ -17,12 +17,12 @@ fn main() {
     let rectangle = gs::Rectangle::new(&gs::Point::new(150, 150), &gs::Point::new(50, 50));
     rectangle.draw(&mut image);
 
-//     // Drawing a triangle
-//     let triangle = gs::Triangle::new(
-//         &gs::Point::new(500, 500),
-//         &gs::Point::new(250, 700),
-//         &gs::Point::new(700, 800),
-//     );
+// Drawing a triangle
+    let triangle = gs::Triangle::new(
+        &gs::Point::new(500, 500),
+        &gs::Point::new(250, 700),
+        &gs::Point::new(700, 800),
+    );
 //     triangle.draw(&mut image);
 
 //     // Drawing random circles
