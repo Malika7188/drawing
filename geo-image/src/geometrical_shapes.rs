@@ -10,9 +10,9 @@ pub trait Drawable {
 }
 
 // // The Displayable trait for displaying pixels
-// pub trait Displayable {
-//     fn display(&mut self, x: i32, y: i32, color: Color);
-// }
+pub trait Displayable {
+    fn display(&mut self, x: i32, y: i32, color: Color);
+}
 
 // // Step 2: Implementing the Point Structure
 // #[derive(Clone)] // Deriving Clone for Point
