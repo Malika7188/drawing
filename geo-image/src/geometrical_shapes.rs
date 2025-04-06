@@ -165,13 +165,13 @@ impl Drawable for Triangle {
     }
 }
 
-// // Step 5: Implementing the Rectangle Structure
+ // Step 5: Implementing the Rectangle Structure
 
-// pub struct Rectangle {
-//     top_left: Point,
-//     bottom_right: Point,
-//     color: Color,
-// }
+pub struct Rectangle {
+    top_left: Point,
+    bottom_right: Point,
+    color: Color,
+}
 
 // impl Rectangle {
 //     pub fn new(p1: &Point, p2: &Point) -> Self {
