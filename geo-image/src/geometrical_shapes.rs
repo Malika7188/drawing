@@ -183,18 +183,18 @@ impl Rectangle {
         let x2 = p1.x.max(p2.x);
         let y2 = p1.y.max(p2.y);
         
-//         Rectangle {
-//             top_left: Point::new(x1, y1),
-//             bottom_right: Point::new(x2, y2),
-//             color: Color::rgba(
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 255,
-//             ),
-//         }
-//     }
-// }
+        Rectangle {
+            top_left: Point::new(x1, y1),
+            bottom_right: Point::new(x2, y2),
+            color: Color::rgba(
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                255,
+            ),
+        }
+    }
+}
 
 // impl Drawable for Rectangle {
 //     fn draw(&self, image: &mut Image) {
