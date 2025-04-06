@@ -23,17 +23,17 @@ fn main() {
         &gs::Point::new(250, 700),
         &gs::Point::new(700, 800),
     );
-//     triangle.draw(&mut image);
+    triangle.draw(&mut image);
 
-//     // Drawing random circles
-//     for _ in 1..50 {
-//         gs::Circle::random(image.width, image.height).draw(&mut image);
-//     }
+    // Drawing random circles
+    for _ in 1..50 {
+        gs::Circle::random(image.width, image.height).draw(&mut image);
+    }
 
-//     // Drawing random pentagons
-//     for _ in 1..10 {
-//         gs::Pentagon::random(image.width, image.height).draw(&mut image);
-//     }
+    // Drawing random pentagons
+    for _ in 1..10 {
+        gs::Pentagon::random(image.width, image.height).draw(&mut image);
+    }
 
 //     // Drawing random cubes
 //     for _ in 1..5 {
