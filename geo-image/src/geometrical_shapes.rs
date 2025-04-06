@@ -135,22 +135,22 @@ pub struct Triangle {
     color: Color,
 }
 
-// impl Triangle {
-//     pub fn new(p1: &Point, p2: &Point, p3: &Point) -> Self {
-//         let mut rng = rand::thread_rng();
-//         Triangle {
-//             p1: Point::new(p1.x, p1.y),
-//             p2: Point::new(p2.x, p2.y),
-//             p3: Point::new(p3.x, p3.y),
-//             color: Color::rgba(
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 255,
-//             ),
-//         }
-//     }
-// }
+impl Triangle {
+    pub fn new(p1: &Point, p2: &Point, p3: &Point) -> Self {
+        let mut rng = rand::thread_rng();
+        Triangle {
+    //         p1: Point::new(p1.x, p1.y),
+    //         p2: Point::new(p2.x, p2.y),
+    //         p3: Point::new(p3.x, p3.y),
+    //         color: Color::rgba(
+    //             rng.gen_range(0..=255),
+    //             rng.gen_range(0..=255),
+    //             rng.gen_range(0..=255),
+    //             255,
+    //         ),
+    //     }
+    // }
+}
 
 // impl Drawable for Triangle {
 //     fn draw(&self, image: &mut Image) {
