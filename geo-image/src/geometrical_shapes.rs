@@ -54,11 +54,11 @@ impl Drawable for Point {
 
 // // Step 3: Implementing the Line Structure
 
-// pub struct Line {
-//     start: Point,
-//     end: Point,
-//     color: Color,
-// }
+pub struct Line {
+    start: Point,
+    end: Point,
+    color: Color,
+}
 
 // impl Line {
 //     pub fn new(start: &Point, end: &Point) -> Self {
