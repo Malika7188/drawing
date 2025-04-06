@@ -160,10 +160,10 @@ impl Drawable for Triangle {
         Line::new(&self.p3, &self.p1).draw(image);
     }
 
-//     fn color(&self) -> Color {
-//         self.color.clone()
-//     }
-// }
+    fn color(&self) -> Color {
+        self.color.clone()
+    }
+}
 
 // // Step 5: Implementing the Rectangle Structure
 
