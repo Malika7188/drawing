@@ -1,8 +1,8 @@
 mod geometrical_shapes;
 
-// use geometrical_shapes as gs;
-// use gs::{Displayable, Drawable};
-// use raster::{Color, Image};
+use geometrical_shapes as gs;
+use gs::{Displayable, Drawable};
+use raster::{Color, Image};
 
 // fn main() {
 //     let mut image = Image::blank(1000, 1000);
