@@ -178,10 +178,10 @@ impl Rectangle {
         let mut rng = rand::thread_rng();
         
         // Ensure we have proper top-left and bottom-right points
-        // let x1 = p1.x.min(p2.x);
-        // let y1 = p1.y.min(p2.y);
-        // let x2 = p1.x.max(p2.x);
-        // let y2 = p1.y.max(p2.y);
+        let x1 = p1.x.min(p2.x);
+        let y1 = p1.y.min(p2.y);
+        let x2 = p1.x.max(p2.x);
+        let y2 = p1.y.max(p2.y);
         
 //         Rectangle {
 //             top_left: Point::new(x1, y1),
