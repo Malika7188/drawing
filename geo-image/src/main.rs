@@ -35,14 +35,14 @@ fn main() {
         gs::Pentagon::random(image.width, image.height).draw(&mut image);
     }
 
-//     // Drawing random cubes
-//     for _ in 1..5 {
-//         gs::Cube::random(image.width, image.height).draw(&mut image);
-//     }
+    // Drawing random cubes
+    for _ in 1..5 {
+        gs::Cube::random(image.width, image.height).draw(&mut image);
+    }
 
-//     // Save the image to a file
-//     raster::save(&image, "image.png").unwrap();
-// }
+    // Save the image to a file
+    raster::save(&image, "image.png").unwrap();
+}
 
 // impl Displayable for Image {
 //     fn display(&mut self, x: i32, y: i32, color: Color) {
