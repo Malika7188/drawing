@@ -37,11 +37,11 @@ impl Point {
         }
     }
 
-//     pub fn random(width: i32, height: i32) -> Self {
-//         let mut rng = rand::thread_rng();
-//         Self::new(rng.gen_range(0..width), rng.gen_range(0..height))
-//     }
-// }
+    pub fn random(width: i32, height: i32) -> Self {
+        let mut rng = rand::thread_rng();
+        Self::new(rng.gen_range(0..width), rng.gen_range(0..height))
+    }
+}
 // impl Drawable for Point {
 //     fn draw(&self, image: &mut Image) {
 //         image.display(self.x, self.y, self.color());
