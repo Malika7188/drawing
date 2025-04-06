@@ -4,11 +4,11 @@ use geometrical_shapes as gs;
 use gs::{Displayable, Drawable};
 use raster::{Color, Image};
 
-// fn main() {
-//     let mut image = Image::blank(1000, 1000);
+fn main() {
+    let mut image = Image::blank(1000, 1000);
 
-//     // Drawing a random line
-//     gs::Line::random(image.width, image.height).draw(&mut image);
+    // Drawing a random line
+    gs::Line::random(image.width, image.height).draw(&mut image);
 
 //     // Drawing a random point
 //     gs::Point::random(image.width, image.height).draw(&mut image);
