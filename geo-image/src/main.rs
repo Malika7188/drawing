@@ -10,8 +10,8 @@ fn main() {
     // Drawing a random line
     gs::Line::random(image.width, image.height).draw(&mut image);
 
-//     // Drawing a random point
-//     gs::Point::random(image.width, image.height).draw(&mut image);
+// Drawing a random point
+    gs::Point::random(image.width, image.height).draw(&mut image);
 
 //     // Drawing a rectangle
 //     let rectangle = gs::Rectangle::new(&gs::Point::new(150, 150), &gs::Point::new(50, 50));
