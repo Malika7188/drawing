@@ -121,10 +121,10 @@ impl Drawable for Line {
         }
     }
 
-//     fn color(&self) -> Color {
-//         self.color.clone()
-//     }
-// }
+    fn color(&self) -> Color {
+        self.color.clone()
+    }
+}
 
 // // Step 4: Implementing the Triangle Structure
 
