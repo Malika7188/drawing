@@ -84,13 +84,13 @@ impl Line {
     }
 }
 
-// impl Drawable for Line {
-//     fn draw(&self, image: &mut Image) {
-//         // Bresenham's line algorithm
-//         let mut x0 = self.start.x;
-//         let mut y0 = self.start.y;
-//         let x1 = self.end.x;
-//         let y1 = self.end.y;
+impl Drawable for Line {
+    fn draw(&self, image: &mut Image) {
+        // Bresenham's line algorithm
+        let mut x0 = self.start.x;
+        let mut y0 = self.start.y;
+        let x1 = self.end.x;
+        let y1 = self.end.y;
 
 //         let dx = (x1 - x0).abs();
 //         let dy = -(y1 - y0).abs();
