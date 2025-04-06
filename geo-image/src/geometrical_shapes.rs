@@ -126,14 +126,14 @@ impl Drawable for Line {
     }
 }
 
-// // Step 4: Implementing the Triangle Structure
+// Step 4: Implementing the Triangle Structure
 
-// pub struct Triangle {
-//     p1: Point,
-//     p2: Point,
-//     p3: Point,
-//     color: Color,
-// }
+pub struct Triangle {
+    p1: Point,
+    p2: Point,
+    p3: Point,
+    color: Color,
+}
 
 // impl Triangle {
 //     pub fn new(p1: &Point, p2: &Point, p3: &Point) -> Self {
