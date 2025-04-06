@@ -208,9 +208,9 @@ impl Drawable for Rectangle {
         Line::new(&bottom_left, &self.top_left).draw(image);
     }
 
-    // fn color(&self) -> Color {
-    //     self.color.clone()
-    // }
+    fn color(&self) -> Color {
+        self.color.clone()
+    }
 }
 
 // // Step 6: Implementing the Circle Structure
