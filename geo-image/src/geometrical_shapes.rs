@@ -152,13 +152,13 @@ impl Triangle {
     }
 }
 
-// impl Drawable for Triangle {
-//     fn draw(&self, image: &mut Image) {
-//         // Draw the triangle as three lines
-//         Line::new(&self.p1, &self.p2).draw(image);
-//         Line::new(&self.p2, &self.p3).draw(image);
-//         Line::new(&self.p3, &self.p1).draw(image);
-//     }
+impl Drawable for Triangle {
+    fn draw(&self, image: &mut Image) {
+        // Draw the triangle as three lines
+        Line::new(&self.p1, &self.p2).draw(image);
+        Line::new(&self.p2, &self.p3).draw(image);
+        Line::new(&self.p3, &self.p1).draw(image);
+    }
 
 //     fn color(&self) -> Color {
 //         self.color.clone()
