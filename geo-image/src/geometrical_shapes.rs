@@ -42,15 +42,15 @@ impl Point {
         Self::new(rng.gen_range(0..width), rng.gen_range(0..height))
     }
 }
-// impl Drawable for Point {
-//     fn draw(&self, image: &mut Image) {
-//         image.display(self.x, self.y, self.color());
-//     }
+impl Drawable for Point {
+    fn draw(&self, image: &mut Image) {
+        image.display(self.x, self.y, self.color());
+    }
 
-//     fn color(&self) -> Color {
-//         self.color.clone()
-//     }
-// }
+    fn color(&self) -> Color {
+        self.color.clone()
+    }
+}
 
 // // Step 3: Implementing the Line Structure
 
