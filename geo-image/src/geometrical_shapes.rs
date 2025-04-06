@@ -143,13 +143,13 @@ impl Triangle {
             p2: Point::new(p2.x, p2.y),
             p3: Point::new(p3.x, p3.y),
             color: Color::rgba(
-    //             rng.gen_range(0..=255),
-    //             rng.gen_range(0..=255),
-    //             rng.gen_range(0..=255),
-    //             255,
-    //         ),
-    //     }
-    // }
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                255,
+            ),
+        }
+    }
 }
 
 // impl Drawable for Triangle {
