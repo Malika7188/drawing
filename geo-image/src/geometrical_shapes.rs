@@ -60,20 +60,20 @@ pub struct Line {
     color: Color,
 }
 
-// impl Line {
-//     pub fn new(start: &Point, end: &Point) -> Self {
-//         let mut rng = rand::thread_rng();
-//         Line {
-//             start: Point::new(start.x, start.y),
-//             end: Point::new(end.x, end.y),
-//             color: Color::rgba(
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 255,
-//             ),
-//         }
-//     }
+impl Line {
+    pub fn new(start: &Point, end: &Point) -> Self {
+        let mut rng = rand::thread_rng();
+        Line {
+            start: Point::new(start.x, start.y),
+            end: Point::new(end.x, end.y),
+            color: Color::rgba(
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                255,
+            ),
+        }
+    }
 
 //     pub fn random(width: i32, height: i32) -> Self {
 //         let mut rng = rand::thread_rng();
