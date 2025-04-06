@@ -22,20 +22,20 @@ pub struct Point {
     color: Color,
 }
 
-// impl Point {
-//     pub fn new(x: i32, y: i32) -> Self {
-//         let mut rng = rand::thread_rng();
-//         Point {
-//             x,
-//             y,
-//             color: Color::rgba(
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 rng.gen_range(0..=255),
-//                 255,
-//             ),
-//         }
-//     }
+impl Point {
+    pub fn new(x: i32, y: i32) -> Self {
+        let mut rng = rand::thread_rng();
+        Point {
+            x,
+            y,
+            color: Color::rgba(
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                rng.gen_range(0..=255),
+                255,
+            ),
+        }
+    }
 
 //     pub fn random(width: i32, height: i32) -> Self {
 //         let mut rng = rand::thread_rng();
