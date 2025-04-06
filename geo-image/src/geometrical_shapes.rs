@@ -202,11 +202,11 @@ impl Drawable for Rectangle {
         let top_right = Point::new(self.bottom_right.x, self.top_left.y);
         let bottom_left = Point::new(self.top_left.x, self.bottom_right.y);
         
-    //     Line::new(&self.top_left, &top_right).draw(image);
-    //     Line::new(&top_right, &self.bottom_right).draw(image);
-    //     Line::new(&self.bottom_right, &bottom_left).draw(image);
-    //     Line::new(&bottom_left, &self.top_left).draw(image);
-    // }
+        Line::new(&self.top_left, &top_right).draw(image);
+        Line::new(&top_right, &self.bottom_right).draw(image);
+        Line::new(&self.bottom_right, &bottom_left).draw(image);
+        Line::new(&bottom_left, &self.top_left).draw(image);
+    }
 
     // fn color(&self) -> Color {
     //     self.color.clone()
