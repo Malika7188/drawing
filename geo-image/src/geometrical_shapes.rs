@@ -92,11 +92,11 @@ impl Drawable for Line {
         let x1 = self.end.x;
         let y1 = self.end.y;
 
-//         let dx = (x1 - x0).abs();
-//         let dy = -(y1 - y0).abs();
-//         let sx = if x0 < x1 { 1 } else { -1 };
-//         let sy = if y0 < y1 { 1 } else { -1 };
-//         let mut err = dx + dy;
+        let dx = (x1 - x0).abs();
+        let dy = -(y1 - y0).abs();
+        let sx = if x0 < x1 { 1 } else { -1 };
+        let sy = if y0 < y1 { 1 } else { -1 };
+        let mut err = dx + dy;
 
 //         loop {
 //             image.display(x0, y0, self.color());
