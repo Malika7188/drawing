@@ -75,14 +75,14 @@ impl Line {
         }
     }
 
-//     pub fn random(width: i32, height: i32) -> Self {
-//         let mut rng = rand::thread_rng();
-//         Self::new(
-//             &Point::new(rng.gen_range(0..width), rng.gen_range(0..height)),
-//             &Point::new(rng.gen_range(0..width), rng.gen_range(0..height)),
-//         )
-//     }
-// }
+    pub fn random(width: i32, height: i32) -> Self {
+        let mut rng = rand::thread_rng();
+        Self::new(
+            &Point::new(rng.gen_range(0..width), rng.gen_range(0..height)),
+            &Point::new(rng.gen_range(0..width), rng.gen_range(0..height)),
+        )
+    }
+}
 
 // impl Drawable for Line {
 //     fn draw(&self, image: &mut Image) {
