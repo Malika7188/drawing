@@ -98,28 +98,28 @@ impl Drawable for Line {
         let sy = if y0 < y1 { 1 } else { -1 };
         let mut err = dx + dy;
 
-//         loop {
-//             image.display(x0, y0, self.color());
-//             if x0 == x1 && y0 == y1 {
-//                 break;
-//             }
-//             let e2 = 2 * err;
-//             if e2 >= dy {
-//                 if x0 == x1 {
-//                     break;
-//                 }
-//                 err += dy;
-//                 x0 += sx;
-//             }
-//             if e2 <= dx {
-//                 if y0 == y1 {
-//                     break;
-//                 }
-//                 err += dx;
-//                 y0 += sy;
-//             }
-//         }
-//     }
+        loop {
+            image.display(x0, y0, self.color());
+            if x0 == x1 && y0 == y1 {
+                break;
+            }
+            let e2 = 2 * err;
+            if e2 >= dy {
+                if x0 == x1 {
+                    break;
+                }
+                err += dy;
+                x0 += sx;
+            }
+            if e2 <= dx {
+                if y0 == y1 {
+                    break;
+                }
+                err += dx;
+                y0 += sy;
+            }
+        }
+    }
 
 //     fn color(&self) -> Color {
 //         self.color.clone()
